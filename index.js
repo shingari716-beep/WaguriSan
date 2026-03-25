@@ -15,6 +15,8 @@ client.on('ready', () => {
 client.on('messageCreate', message => {
   if (message.author.bot) return;
 
+  console.log("Got message:", message.content);
+
   if (message.content === '!ping') {
     message.reply('pong');
   }
